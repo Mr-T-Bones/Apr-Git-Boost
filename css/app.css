@@ -1,0 +1,82 @@
+
+:root {
+    --bs-blue: #267af7;
+    --bs-green: #8cbc00;
+}
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-family: 'Handjet', cursive; 
+    font-size: 1.6rem;
+    line-height: 2;
+}
+h1,h2,h3 {
+    font-family: 'Caveat', cursive;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+ @media(min-with: 768px){
+    h2{
+        font-size: 4rem;
+    }
+ }
+ @media(min-with: 768px){
+    h1{
+        font-size: 5rem;
+    }
+ }
+ @media(min-with: 768px){
+    h3{
+        font-size: 3rem;
+    }
+ }
+ .text-primary,.name-site{
+     color: var(--bs-blue)!important;
+ }
+.hero{
+    background-image: url(../img/principal.jpg) ;
+    height: 25rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+@media(min-width:768px){
+    .hero{
+        height: 55rem;
+    }
+}
+.bg-primary{
+
+    background-color: var(--bs-blue)!important;
+}
+btn-success{
+    background-color: var(--bs-green)!important;
+}
+
+@media (min-width:768px)
+{
+    .producto img {
+        height: 43rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.catalogo img {
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.catalogo img:hover {
+    transform: scale(1.2);
+}
