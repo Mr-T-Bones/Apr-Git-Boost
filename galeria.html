@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Handjet:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Ecommerce-Galeria</title>
+</head>
+<body>
+    <header class="py-5">
+        <h1 class="text-start">Tienda de los <span class="text-primary">Muebles</span></h1>
+        <div class="border-top py-3">
+            <div class="navbar name-site navbar-expand-lg container navbar-light">
+                <a class="navbar-brand d-lg-none fs-2 fw-bold text-uppercase" href="index.html">Tienda </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+                <div  id="navegacion" class="collapse navbar-collapse">
+                    <nav class="navbar-nav container text-center d-flex flex-md-row  justify-content-md-between ">
+                        <a  class="text-dark text-decoration-none"  href="index.html">Inicio</a>
+                        <a  class="text-dark text-decoration-none"  href="nosotros.html">Catalogo</a>
+                        <a  class="text-dark text-decoration-none"  href="tienda.html">Acerca de Nosotros</a>
+                        <a  class="text-dark text-decoration-none"  href="blog.html">Blog</a>
+                        <a  class="text-dark text-decoration-none"  href="contacto.html">Contacto</a>
+                        <a  class="text-dark text-decoration-none"  href="galeria.html">Galeria</a>
+                    </nav>
+                </div>
+            </div>     
+        </div>
+     
+    </header>
+
+
+<main class="container-xl p-5 ">  
+    <h2 class="text-center my-5">Galeria</h2>
+    <ul class="row list-unstyledb galeria">
+        <li class="col-md-6 col-lg-4 ">
+            <a data-bs-toggle="modal" data-bs-target="#modal-imagen-1">
+             <img src="img/galeria_01.jpg" alt="img galeria" class="img-fluid">
+            </a>
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <img src="img/galeria_02.jpg" alt="img galeria" class="img-fluid">
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <img src="img/galeria_03.jpg" alt="img galeria" class="img-fluid">
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <img src="img/galeria_04.jpg" alt="img galeria" class="img-fluid">
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <img src="img/galeria_05.jpg" alt="img galeria" class="img-fluid">
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <img src="img/galeria_06.jpg" alt="img galeria" class="img-fluid">
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <img src="img/galeria_07.jpg" alt="img galeria" class="img-fluid">
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <img src="img/galeria_08.jpg" alt="img galeria" class="img-fluid">
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <img src="img/galeria_09.jpg" alt="img galeria" class="img-fluid">
+        </li>
+    </ul>
+
+</main>
+<div class="modal fade " id="modal-imagen-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="img/galeria_01.jpg" alt="img galeria" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="pt-5 mt-5 border-top">
+    <div class="container-xl mt-5">
+        <div class="row">
+            <div class="col-md-4 mb-5 mb-md-0 text-center ">
+                <h2 class="">Catalogo</h2>
+                <nav class="d-flex flex-column">
+                    <a href="#" class="text-dark text-decoration-none">Salas de Reunion</a>
+                    <a href="#" class="text-dark text-decoration-none">Jardin</a>
+                    <a href="#" class="text-dark text-decoration-none">Cochera</a>
+                    <a href="#" class="text-dark text-decoration-none">Dormitorios</a>
+
+                </nav>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0 text-center ">
+                <h2 class="">Sobre Nosotros</h2>
+                <nav class="d-flex flex-column">
+                    <a href="#" class="text-dark text-decoration-none">Nuestra Historia</a>
+                    <a href="#" class="text-dark text-decoration-none">Mision, Vision y Valores</a>
+                    <a href="#" class="text-dark text-decoration-none">Carrera</a>
+                    <a href="#" class="text-dark text-decoration-none">Politica de Privacidad</a>
+                    <a href="#" class="text-dark text-decoration-none">Terminos del Servicio</a>
+
+                </nav>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0 text-center ">
+                <h2 class="">Soporte</h2>
+                <nav class="d-flex flex-column">
+                    <a href="#" class="text-dark text-decoration-none">Preguntas Frecuentes</a>
+                    <a href="#" class="text-dark text-decoration-none">Ayuda en linea</a>
+                    <a href="#" class="text-dark text-decoration-none">Confidencia y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+        <p class="mt-5 text-center fs-2">Todos los derechos reservados Para Mi (2023).</p>
+    </div>
+
+</footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
