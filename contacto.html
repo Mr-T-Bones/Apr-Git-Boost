@@ -40,14 +40,63 @@
 <main class="container-xl p-5 ">  
     <h2 class="text-center my-5"> Contacto</h2>
     <div class="row justify-content-center">
-        <form action="" class="col-md-8">
+        <form action="" class="col-md-8 needs-validation" novalidate>
             <fieldset>
-                <legend class="">Tus Datos</legend>
+                <legend class="bg-primary text-center text-white fs-2">Tus Datos</legend>
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre: </label>
-                    <input type="text" id="nombre" placeholder="Tu Nombre" class="form-control">
+                    <input type="text" id="nombre" placeholder="Tu Nombre" required class="form-control">
+                    <span class="invalid-feedback">Error O.O</span>  
+                </div>
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto: </label>
+                    <input type="text" id="asunto" placeholder="Tu Asunto" class="form-control">
+                <span class="valid-feedback">Correcto !!</span>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail: </label>
+                    <input type="text" id="email" placeholder="Tu E-mail" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="tel" class="form-label">Telefono: </label>
+                    <input type="tel" id="tel" placeholder="Tu Telefono" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <labe class="form-label" for="tel">Mensaje: </labe>
+                    <textarea class="form-control" name="Mensaje" id="Mensaje" rows="10"></textarea>
                 </div>
             </fieldset>
+            <fieldset>
+                <legend class="bg-primary text-center text-white fs-2">Pais</legend>
+                <div class="mb-3">
+                    <label for="pais" class="form-label">Pais: </label>
+                    <select class="form-control" id="pais">
+                        <option value="">-- Seleciona el Páis --</option>
+                        <option value="MX">México</option>
+                        <option value="PR">Peru</option>
+                        <option value="CO">Colombia</option>
+                        <option value="AR">Argentina</option>
+                        <option value="ES">España</option>
+                        <option value="CL">Chile</option>
+                    </select>
+                </div>
+            </fieldset>
+            <FIeldset>
+                <legend class="bg-primary text-center text-white fs-2">Info. Extra</legend>
+
+               <div class="mb-3 form-check">
+                    <label for="cliente" class="form-label">Cliente: </label>
+                    <input name="tipo" type="radio" class="form-check-input" id="cliente" >
+                </div>
+               <div class="mb-3 form-check">
+                    <label for="provedor" class="form-label">Provedor: </label>
+                    <input name="tipo" type="radio" class="form-check-input" id="cliente" >
+                </div>
+            </FIeldset>
+            <div class="d-grid d-md-flex">
+                <input type="submit" class="btn btn-secondary fs-2 px-5 mt-5  " value="Enviar Formulario">
+            </div>
+            
         </form>
 
     </div>
@@ -180,5 +229,6 @@
 </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
