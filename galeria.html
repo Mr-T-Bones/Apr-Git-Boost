@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
 
-    <title>Ecommerce-</title>
+    <title>Ecommerce-Galeria</title>
 </head>
 <body>
     <header class="py-5">
@@ -38,27 +38,66 @@
 
 
 <main class="container-xl p-5 ">  
-    <h2 class="text-center my-5">Galeria de colores </h2>
-    <div class="row justify-content-md-center">
-        <div class="col-md-8">
-            <article class="mb-2 mb-5">
-                <h2 class="my-5">Guia de Colores</h2>
-                <img src="img/nosotros.jpg" alt="imgen guia" class="img-fluid">
-              <div class="d-flex flex-column flex-md-row justify-content-md-between py-4">
-               <p class="fw-blod">Fecha: <span class="text-primary">22 de octubre de 2023</span></p>
-               <p class="fw-blod">Escrito por: <span class="text-primary">Tienda de los Muebles</span></p>
-              </div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rerum, labore sit numquam vel aliquid voluptas ipsum inventore beatae suscipit perferendis soluta provident, enim ad debitis eligendi quo consectetur facilis.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium blanditiis quia vitae incidunt quisquam ullam quos dolore delectus assumenda odit iure labore iusto quod, ratione maiores, similique consectetur dolorum!</p>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore fuga reiciendis atque iure culpa pariatur inventore neque, vero eligendi nostrum ex quod repudiandae exercitationem ipsum corporis, numquam excepturi quos.</p>
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non iure consectetur asperiores earum debitis nulla qui, neque at mollitia harum maiores eveniet placeat? Id non suscipit tempore, similique deserunt in! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime alias enim placeat nesciunt cupiditate atque, doloremque nemo, obcaecati, libero vero veritatis iste facere. Dignissimos, ipsa beatae distinctio quod voluptatum eum!</p>
-           </article>
+    <h2 class="text-center my-5">Galeria</h2>
+    <ul class="row list-unstyledb galeria">
+        <li class="col-md-6 col-lg-4 ">
+            <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen ="galeria_01">
+                <img src="img/galeria_01.jpg" alt="img galeria" class="img-fluid">
+            </a>
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen ="galeria_02">
+                <img src="img/galeria_02.jpg" alt="img galeria" class="img-fluid">
+            </a>
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen ="galeria_03">
+                <img src="img/galeria_03.jpg" alt="img galeria" class="img-fluid">
+            </a>
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen ="galeria_04">
+                <img src="img/galeria_04.jpg" alt="img galeria" class="img-fluid">
+            </a>
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen ="galeria_05">
+                <img src="img/galeria_05.jpg" alt="img galeria" class="img-fluid">
+            </a>
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen ="galeria_06">
+                <img src="img/galeria_06.jpg" alt="img galeria" class="img-fluid">
+            </a>
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen ="galeria_07">
+                <img src="img/galeria_07.jpg" alt="img galeria" class="img-fluid">
+            </a>
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen ="galeria_08">
+                <img src="img/galeria_08.jpg" alt="img galeria" class="img-fluid">
+            </a>
+        </li>
+        <li class="col-md-6 col-lg-4 ">
+            <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen ="galeria_09">
+                <img src="img/galeria_09.jpg" alt="img galeria" class="img-fluid">
+            </a>
+        </li>
+    </ul>
+
+</main>
+<div class="modal fade " id="modal-imagen">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+              <!-- <img src="img/galeria_01.jpg" alt="img galeria" class="img-fluid">>--> 
+            </div>
         </div>
 
     </div>
-
-</main>
-
+</div>
 
 <footer class="pt-5 mt-5 border-top">
     <div class="container-xl mt-5">
@@ -99,5 +138,6 @@
 </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
